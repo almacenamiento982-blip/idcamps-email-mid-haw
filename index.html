@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Plan Hawaii y Midland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--tinta:#141414;--suave:#5b5a57;--linea:#e2ded6;--fondo:#f6f4ef;--panel:#fff;--oro:#a87a2d;--oro2:#f3ead9;--ok:#2f6b3a;--ok2:#e7f0e8;--sms:#e9e9eb;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--tinta:#f1efe9;--suave:#b3afa6;--linea:#2f2d29;--fondo:#121110;--panel:#1c1b19;--oro:#d4a959;--oro2:#2e2516;--ok:#7bc58a;--ok2:#18291b;--sms:#2c2c2e;color-scheme:dark}}
+:root[data-theme="dark"]{--tinta:#f1efe9;--suave:#b3afa6;--linea:#2f2d29;--fondo:#121110;--panel:#1c1b19;--oro:#d4a959;--oro2:#2e2516;--ok:#7bc58a;--ok2:#18291b;--sms:#2c2c2e;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.6 Barlow,Arial,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:18px}
+header.top{background:#141414;color:#fff;padding-block:34px 30px}
+.k{font:600 13px/1 'Barlow Condensed',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#d9b36a;margin:0 0 10px}
+h1{font:700 clamp(30px,5vw,46px)/1.02 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:0 0 12px;text-wrap:balance}
+header.top p{color:#cfcac0;max-width:740px;margin:0}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:22px}
+.t{background:#222;border:1px solid #333;border-radius:10px;padding:14px 16px}
+.t dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#bdb6a8}
+.t dd{margin:4px 0 0;font:700 26px/1.1 'Barlow Condensed',sans-serif;color:#fff}
+.t dd small{display:block;font:400 13px/1.4 Barlow,sans-serif;color:#bdb6a8;margin-top:4px}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--fondo);border-bottom:1px solid var(--linea)}
+nav.tabs .wrap{display:flex;gap:6px;padding-block:10px;flex-wrap:wrap}
+nav.tabs a{font:700 15px 'Barlow Condensed',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--suave);text-decoration:none;padding:7px 12px;border-radius:8px;border:1px solid var(--linea);background:var(--panel)}
+section{padding-block:34px 6px}
+h2{font:700 30px/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:0 0 6px;text-wrap:balance}
+h3{font:700 21px/1.15 'Barlow Condensed',sans-serif;letter-spacing:.02em;margin:0 0 4px}
+.lead{color:var(--suave);margin:0 0 18px;max-width:760px}
+.panel{background:var(--panel);border:1px solid var(--linea);border-radius:12px;padding:18px 20px}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.oro{background:var(--oro2);border-left:4px solid var(--oro);padding:14px 16px;border-radius:6px}
+.mini{font-size:14px;color:var(--suave)}
+ul,ol{padding-left:20px;margin:8px 0}li{margin:4px 0}
+.chip{display:inline-block;font:600 12px/1 Barlow,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:var(--oro2);color:var(--oro);white-space:nowrap}
+.chip.sms{background:var(--ok2);color:var(--ok)}
+.chip.pers{background:var(--linea);color:var(--tinta)}
+.fase{margin-top:26px}
+.fase>.k2{font:700 14px/1 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);margin-bottom:10px}
+.msg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;background:var(--panel);border:1px solid var(--linea);border-radius:12px;padding:18px;margin-top:12px}
+.msg .info dl{margin:10px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:15px}
+.msg .info dt{color:var(--suave);font-size:13px;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.msg .info dd{margin:0}
+.porque{margin-top:10px;font-size:15px}
+/* teléfono con SMS */
+.tel{max-width:330px;margin:0 auto;border:9px solid #1b1b1b;border-radius:32px;background:#fff;padding:14px 12px 22px;color:#111}
+.tel .de{text-align:center;font-size:12px;color:#777;margin-bottom:10px}
+.tel .de b{display:block;font-size:14px;color:#111}
+.burbuja{background:#e9e9eb;border-radius:18px;padding:10px 13px;font:15px/1.4 -apple-system,'Segoe UI',Arial,sans-serif;max-width:92%}
+.burbuja a{color:#0a64d8;word-break:break-all}
+.tel .hora{font-size:11px;color:#999;margin:4px 0 0 6px}
+/* correo */
+.mail{border:1px solid var(--linea);border-radius:10px;overflow:hidden;background:#fff;color:#1a1a1a;max-width:460px;margin:0 auto}
+.mail .cab{padding:10px 14px;border-bottom:1px solid #eee;font-size:13px;color:#555;background:#fafafa}
+.mail .cab b{color:#111}
+.mail .cab .asunto{font-size:15px;color:#111;font-weight:600;margin-top:3px}
+.mail .cab .pre{color:#777}
+.mail img{display:block;width:100%;height:auto}
+.mail .cuerpo{padding:16px 18px;font:15px/1.55 Arial,sans-serif}
+.mail .cuerpo p{margin:0 0 10px}
+.mail .boton{display:block;text-align:center;background:#a87a2d;color:#111;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:12px;border-radius:4px;margin:14px 0 10px;text-decoration:none}
+.mail .pie{padding:10px 18px 14px;font-size:11px;color:#888;border-top:1px solid #eee}
+.guion{background:var(--panel);border:1px dashed var(--linea);border-radius:10px;padding:14px 16px;font-style:italic}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font:600 12px/1.2 Barlow,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.tabla{overflow-x:auto}
+footer{padding-block:30px 40px;color:var(--suave);font-size:13px}
+@media (max-width:760px){.dos,.msg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <p class="k">Juventus ID Camps 2026-27 · Email y SMS · Propuesta para aprobar</p>
+  <h1>Plan de mensajes para Hawaii y Midland</h1>
+  <p>Qué se le va a enviar a las familias de Hawaii y de Midland, cuándo, a quiénes y por qué. Cada mensaje se muestra tal como lo verían en el celular o en el correo. Hawaii va primero porque la logística de la isla necesita saber pronto cuántos niños van.</p>
+  <dl class="tarjetas">
+    <div class="t"><dt>Hawaii · 14–16 dic</dt><dd>67 teléfonos · 61 correos<small>37 familias que ya pagaron una clínica de Juventus</small></dd></div>
+    <div class="t"><dt>Midland · 9–11 dic</dt><dd>93 teléfonos · 90 correos<small>75 familias que ya pagaron una clínica de Juventus</small></dd></div>
+    <div class="t"><dt>Primeros envíos</dt><dd>12 al 16 de octubre<small>la misma semana en que arrancan los anuncios</small></dd></div>
+  </dl>
+</div></header>
+
+<nav class="tabs"><div class="wrap">
+  <a href="#estrategia">Estrategia</a><a href="#esperar">¿Esperar una semana?</a><a href="#hawaii">Hawaii</a><a href="#midland">Midland</a><a href="#aprobar">Qué se aprueba</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="estrategia">
+  <h2>La estrategia en cuatro ideas</h2>
+  <div class="dos">
+    <div class="panel"><h3>1 · Primero, quienes ya vinieron</h3><p>Las dos sedes tuvieron una clínica este mismo año. En <b>Hawaii (marzo)</b> pagaron 33 familias con 37 niños; en <b>Midland (junio)</b>, 68 familias con 82 niños. Son las familias más fáciles de convencer: ya conocen a los entrenadores y el formato.</p></div>
+    <div class="panel"><h3>2 · SMS para avisar, email para explicar</h3><p>En Dallas el SMS a familias que ya conocían Juventus llegó al 95 % y casi 1 de cada 5 tocó el enlace, con solo 0,7 % de bajas. El email convence menos, pero permite explicar el camp con calma. Por eso cada fase abre con un SMS corto y sigue con un email.</p></div>
+    <div class="panel"><h3>3 · Lo aprendido en Dallas</h3><ul><li>Asunto que empieza por ciudad y fecha (ganó el A/B en Dallas).</li><li>Botón directo a la sección de pago, sin bajar por toda la página.</li><li>Nadie que ya pagó este año recibe mensajes de venta.</li><li>Sin urgencia inventada: si hay fecha de cierre, es una fecha real.</li></ul></div>
+    <div class="panel"><h3>4 · Medir familia por familia</h3><p>Después de cada envío se cruza la lista con los registros de la plataforma: cuántas familias de esa lista se registraron o pagaron. Así se separa lo que traen los mensajes de lo que traen los anuncios, aunque corran al mismo tiempo. Los resultados se publican en el <a href="https://almacenamiento982-blip.github.io/idcamps-email-sms/#hawaii" target="_blank" rel="noopener">informe de email y SMS</a>.</p></div>
+  </div>
+</section>
+
+<section id="esperar">
+  <h2>¿Conviene esperar una semana de anuncios en Hawaii?</h2>
+  <p class="lead">La pregunta es razonable: dejar correr los anuncios siete días, ver cómo responde Hawaii y después escribir a la base. Se recomienda no esperar con los primeros mensajes, y sí esperar con los más amplios.</p>
+  <div class="dos">
+    <div class="panel"><h3>Por qué empezar ya con la base</h3>
+      <ul>
+        <li><b>Son públicos distintos.</b> Los anuncios buscan familias nuevas de la isla; los mensajes van a familias que ya pagaron. Esperar no da información sobre ellas.</li>
+        <li><b>La logística no puede esperar.</b> Las primeras respuestas de la base son el dato más rápido para estimar cuántos niños van a Hawaii.</li>
+        <li><b>Se puede medir por separado.</b> El cruce familia por familia distingue a quién trajo el mensaje y a quién el anuncio.</li>
+        <li><b>Cuesta casi nada.</b> Son unos 50 SMS y 61 correos; el riesgo es mínimo.</li>
+      </ul>
+    </div>
+    <div class="panel"><h3>Qué sí espera a la primera semana</h3>
+      <ul>
+        <li><b>El SMS con precio a todos los teléfonos</b> (27-oct en Hawaii, 3-nov en Midland), para leer antes cómo respondió la base y cómo arrancaron los anuncios.</li>
+        <li><b>Cualquier cambio de presupuesto</b> de los anuncios: según las reglas de la cuenta, nada se toca antes de 7 días.</li>
+        <li><b>El primer conteo para logística</b> (30-oct), que combina las dos fuentes con dos semanas de datos.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="hawaii">
+  <p class="k" style="color:var(--oro)">Prioridad · ID Camp Hawaii · 14–16 de diciembre · Waipi'o Soccer Complex, Waipahu · 4:30 a 6:30 pm</p>
+  <h2>Hawaii</h2>
+  <p class="lead">Base: 61 correos y 67 teléfonos aptos (37 familias que pagaron antes, 14 que se registraron sin pagar y 29 otros contactos de la isla). Horas en hora de Hawaii. Este año: 3 familias registradas y ninguna ha pagado.</p>
+
+  <div class="fase"><div class="k2">Fase 1 · 12 al 16 de octubre · Reactivar a quienes ya vinieron</div>
+
+    <article class="msg">
+      <div class="info"><span class="chip sms">SMS 1</span><h3>Familias que empezaron el registro y no pagaron</h3>
+        <dl><dt>Cuándo</dt><dd>Lunes 12-oct · 5:00 pm</dd><dt>A quién</dt><dd>Las 3 familias registradas este año sin pagar</dd><dt>Enlace</dt><dd>Página de Hawaii, sección de pago</dd></dl>
+        <p class="porque"><b>Por qué:</b> ya mostraron interés y les falta un paso. En Chicago, el mismo mensaje a 22 familias trajo 4 visitas y 1 pago en un día.</p></div>
+      <div class="tel"><div class="de"><b>Juventus Training Camps</b>Mensaje de texto · hoy 5:00 p. m.</div>
+        <div class="burbuja">Juventus ID Camp Hawaii, Dec 14-16: your registration is almost done. Finish it here: <a>jtcamps.us/haw1</a></div></div>
+    </article>
+
+    <article class="msg">
+      <div class="info"><span class="chip sms">SMS 2</span><h3>Familias que ya conocen Juventus</h3>
+        <dl><dt>Cuándo</dt><dd>Martes 13-oct · 5:00 pm</dd><dt>A quién</dt><dd>Unos 45 teléfonos: familias que pagaron o se registraron en la clínica de marzo, sin quien ya pagó 2026-27</dd></dl>
+        <p class="porque"><b>Por qué:</b> es el mensaje que mejor funcionó en Dallas (19,6 % de clics). Corto, con ciudad, fecha y entrenadores de Italia.</p></div>
+      <div class="tel"><div class="de"><b>Juventus Training Camps</b>Mensaje de texto · hoy 5:00 p. m.</div>
+        <div class="burbuja">Juventus is back in Hawaii Dec 14-16! ID Camp with coaches from Italy at Waipi'o Soccer Complex. Register: <a>jtcamps.us/haw2</a></div></div>
+    </article>
+
+    <article class="msg">
+      <div class="info"><span class="chip">Email 1</span><h3>Anuncio del camp</h3>
+        <dl><dt>Cuándo</dt><dd>Miércoles 14-oct · 9:00 am</dd><dt>A quién</dt><dd>Los 61 correos de Hawaii, sin quien ya pagó 2026-27</dd><dt>Asuntos</dt><dd>Prueba A/B: "Hawaii, Dec 14-16: train the Juventus way" frente a "Hawaii, Dec 14-16: Juventus coaches are coming back". El ganador queda para los siguientes correos.</dd></dl>
+        <p class="porque"><b>Por qué:</b> da los datos completos (horario, sede, edades y precio) a quien ya vio el SMS. El botón abre la página directamente en la sección de pago.</p></div>
+      <div class="mail"><div class="cab"><b>Juventus Training Camps</b><div class="asunto">Hawaii, Dec 14-16: train the Juventus way</div><div class="pre">Three days at Waipi'o Soccer Complex with coaches from Italy.</div></div>
+        <img src="img/hero_haw.jpg" alt="Póster del ID Camp de Hawaii" loading="lazy" width="600" height="750">
+        <div class="cuerpo"><p>Hi Maria,</p><p>The Juventus ID Camp is coming back to Oahu. For three days, coaches from Italy will train your player with the official Juventus methodology: physical, technical and tactical work, adapted to every age group.</p><p>📅 December 14–16 · 4:30 PM – 6:30 PM<br>📍 Waipi'o Soccer Complex, Waipahu, HI<br>⚽ Boys and girls, ages 6–16 · $345</p><a class="boton">Register your player</a><p>See you on the field,<br>Juventus Training Camps</p></div>
+        <div class="pie">Juventus Training Camps · Unsubscribe · el nombre del saludo es un ejemplo</div></div>
+    </article>
+
+    <article class="msg">
+      <div class="info"><span class="chip pers">Contacto personal</span><h3>Llamada o WhatsApp a las familias de marzo</h3>
+        <dl><dt>Cuándo</dt><dd>Jueves 15 y viernes 16-oct</dd><dt>A quién</dt><dd>Las familias que pagaron en marzo y todavía no se han registrado</dd><dt>Quién</dt><dd>Alguien del equipo de Juventus (por definir)</dd></dl>
+        <p class="porque"><b>Por qué:</b> con una base tan pequeña, una conversación vale más que otro correo. Además da el dato que más necesita la logística: cuántas de esas familias piensan volver.</p></div>
+      <div><p class="mini" style="margin:0 0 6px">Guion sugerido</p><div class="guion">"Hi Maria, this is [name] from Juventus Training Camps. Your player trained with us in March and the ID Camp is coming back to Waipi'o on December 14–16. Would you like me to send you the registration link?"</div></div>
+    </article>
+  </div>
+
+  <div class="fase"><div class="k2">Fase 2 · 20 de octubre al 3 de noviembre · Explicar el camp y dar el precio</div>
+    <div class="panel tabla"><table>
+      <thead><tr><th>Cuándo</th><th>Mensaje</th><th>A quién</th><th>Idea</th></tr></thead>
+      <tbody>
+        <tr><td>Mar 20-oct</td><td><span class="chip">Email 2</span> Qué hace el jugador en el camp</td><td>Lista sin rebotes ni quien ya pagó</td><td>Cómo es un día: parte física, técnica y táctica, y la evaluación de los entrenadores.</td></tr>
+        <tr><td>Mar 27-oct</td><td><span class="chip sms">SMS 3</span> Todos los teléfonos, con precio</td><td>Unos 65 teléfonos sin quien ya pagó</td><td>"Juventus ID Camp Hawaii Dec 14-16, 3 days with coaches from Italy, $345. Ages 6-16. Register: [enlace]"</td></tr>
+        <tr><td>Vie 30-oct</td><td><span class="chip pers">Interno</span> Primer conteo de niños</td><td>Gerencia</td><td>Registros, pagos y respuestas del contacto personal, para decidir la logística.</td></tr>
+        <tr><td>Mar 3-nov</td><td><span class="chip">Email 3</span> Prueba social</td><td>Lista de Hawaii</td><td>Fotos y testimonios reales de la clínica de marzo en Oahu (solo con material real y aprobado).</td></tr>
+      </tbody></table></div>
+  </div>
+
+  <div class="fase"><div class="k2">Fase 3 · 12 al 17 de noviembre · Cierre</div>
+    <div class="panel tabla"><table>
+      <thead><tr><th>Cuándo</th><th>Mensaje</th><th>A quién</th><th>Idea</th></tr></thead>
+      <tbody>
+        <tr><td>Jue 12-nov</td><td><span class="chip">Email 4</span> Cierre de inscripción</td><td>Lista de Hawaii</td><td><b>Solo si la gerencia fija una fecha real de cierre</b> por la logística. Si no hay fecha, se reemplaza por un recordatorio sin fecha límite.</td></tr>
+        <tr><td>Mar 17-nov</td><td><span class="chip sms">SMS 4</span> Registradas sin pagar</td><td>Teléfonos con registro sin pago</td><td>Mismo formato del SMS 1.</td></tr>
+      </tbody></table></div>
+  </div>
+
+  <div class="fase"><div class="k2">Fase 4 · 10 al 13 de diciembre · Logística</div>
+    <div class="panel tabla"><table>
+      <thead><tr><th>Cuándo</th><th>Mensaje</th><th>A quién</th><th>Idea</th></tr></thead>
+      <tbody>
+        <tr><td>Jue 10-dic</td><td><span class="chip">Email 5</span> Logística a inscritos</td><td>Familias inscritas</td><td>Horario, qué llevar, dónde estacionar y a qué hora llegar.</td></tr>
+        <tr><td>Vie 11-dic</td><td><span class="chip sms">SMS 5</span> A 3 días del camp</td><td>Teléfonos sin pago</td><td>Último aviso, sin presión.</td></tr>
+        <tr><td>Dom 13-dic</td><td><span class="chip sms">SMS 6</span> Recordatorio a inscritos</td><td>Familias inscritas</td><td>"See you tomorrow at Waipi'o, 4:30 PM."</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section id="midland">
+  <p class="k" style="color:var(--oro)">ID Camp Midland · 9–11 de diciembre · Diamondback Energy Sports Complex · 5:30 a 8:00 pm</p>
+  <h2>Midland</h2>
+  <p class="lead">Base: 90 correos y 93 teléfonos aptos (75 familias que pagaron antes, 56 que se registraron sin pagar y 8 otros contactos). Sin anuncios propios ni envíos, Midland ya tiene 5 familias pagadas (7 niños) de 7 registradas: la base de junio responde sola. Horas en hora de Midland (Central).</p>
+
+  <div class="fase"><div class="k2">Fase 1 · 12 al 15 de octubre · Reactivar la base de junio</div>
+    <article class="msg">
+      <div class="info"><span class="chip sms">SMS 1</span><h3>Familias que empezaron el registro y no pagaron</h3>
+        <dl><dt>Cuándo</dt><dd>Lunes 12-oct · 6:00 pm</dd><dt>A quién</dt><dd>Las 2 familias registradas este año sin pagar</dd></dl></div>
+      <div class="tel"><div class="de"><b>Juventus Training Camps</b>Mensaje de texto · hoy 6:00 p. m.</div>
+        <div class="burbuja">Juventus ID Camp Midland, Dec 9-11: your registration is almost done. Finish it here: <a>jtcamps.us/mid1</a></div></div>
+    </article>
+    <article class="msg">
+      <div class="info"><span class="chip sms">SMS 2</span><h3>Familias que ya conocen Juventus</h3>
+        <dl><dt>Cuándo</dt><dd>Miércoles 14-oct · 6:00 pm</dd><dt>A quién</dt><dd>Unos 85 teléfonos: familias que pagaron o se registraron en junio, sin quien ya pagó 2026-27</dd></dl>
+        <p class="porque"><b>Por qué:</b> es la base más caliente de todas las sedes: hace cuatro meses 68 de estas familias pagaron.</p></div>
+      <div class="tel"><div class="de"><b>Juventus Training Camps</b>Mensaje de texto · hoy 6:00 p. m.</div>
+        <div class="burbuja">Juventus is back in Midland Dec 9-11! ID Camp with coaches from Italy at Diamondback Energy Complex. Register: <a>jtcamps.us/mid2</a></div></div>
+    </article>
+    <article class="msg">
+      <div class="info"><span class="chip">Email 1</span><h3>Anuncio del camp</h3>
+        <dl><dt>Cuándo</dt><dd>Jueves 15-oct · 10:00 am</dd><dt>A quién</dt><dd>Los 90 correos de Midland, sin quien ya pagó 2026-27</dd><dt>Asuntos</dt><dd>A/B: "Midland, Dec 9-11: train the Juventus way" frente a "Midland, Dec 9-11: Juventus coaches are coming back"</dd></dl>
+        <p class="porque"><b>Por qué:</b> el texto abre con "After June" para conectar con la clínica que ya vivieron.</p></div>
+      <div class="mail"><div class="cab"><b>Juventus Training Camps</b><div class="asunto">Midland, Dec 9-11: train the Juventus way</div><div class="pre">Three days at Diamondback Energy Sports Complex with coaches from Italy.</div></div>
+        <img src="img/hero_mid.jpg" alt="Póster del ID Camp de Midland" loading="lazy" width="600" height="750">
+        <div class="cuerpo"><p>Hi Maria,</p><p>After June, Juventus is coming back to Midland. For three days, coaches from Italy will train your player with the official Juventus methodology: physical, technical and tactical work, adapted to every age group.</p><p>📅 December 9–11 · 5:30 PM – 8:00 PM<br>📍 Diamondback Energy Sports Complex, Midland, TX<br>⚽ Boys and girls, ages 6–16 · $345</p><a class="boton">Register your player</a><p>See you on the field,<br>Juventus Training Camps</p></div>
+        <div class="pie">Juventus Training Camps · Unsubscribe · el nombre del saludo es un ejemplo</div></div>
+    </article>
+  </div>
+
+  <div class="fase"><div class="k2">Fases 2 a 4 · 27 de octubre al 8 de diciembre</div>
+    <div class="panel tabla"><table>
+      <thead><tr><th>Cuándo</th><th>Mensaje</th><th>A quién</th><th>Idea</th></tr></thead>
+      <tbody>
+        <tr><td>Mar 27-oct</td><td><span class="chip">Email 2</span> Qué hace el jugador en el camp</td><td>Lista sin rebotes ni quien ya pagó</td><td>Cómo es un día de camp.</td></tr>
+        <tr><td>Mar 3-nov</td><td><span class="chip sms">SMS 3</span> Todos los teléfonos, con precio</td><td>Unos 90 teléfonos</td><td>Ciudad, fecha, entrenadores de Italia y $345.</td></tr>
+        <tr><td>Mar 10-nov</td><td><span class="chip">Email 3</span> Prueba social</td><td>Lista de Midland</td><td>"More than 80 players from Midland trained with Juventus coaches in June."</td></tr>
+        <tr><td>Mar 17-nov</td><td><span class="chip sms">SMS 4</span> Registradas sin pagar</td><td>Teléfonos con registro sin pago</td><td>Mismo formato del SMS 1.</td></tr>
+        <tr><td>Lun 30-nov</td><td><span class="chip">Email 4</span> Faltan 9 días</td><td>Lista de Midland</td><td>Recordatorio; se evita la semana de Thanksgiving.</td></tr>
+        <tr><td>Dom 6-dic</td><td><span class="chip sms">SMS 5</span> A 3 días del camp</td><td>Teléfonos sin pago</td><td>Último aviso, sin presión.</td></tr>
+        <tr><td>Lun 7-dic</td><td><span class="chip">Email 5</span> Logística a inscritos</td><td>Familias inscritas</td><td>Horario, qué llevar y dónde llegar.</td></tr>
+        <tr><td>Mar 8-dic</td><td><span class="chip sms">SMS 6</span> Recordatorio a inscritos</td><td>Familias inscritas</td><td>"See you tomorrow, 5:30 PM."</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<section id="aprobar">
+  <h2>Qué se aprueba ahora</h2>
+  <div class="dos">
+    <div class="panel"><h3>Para esta semana</h3><ol>
+      <li>Fase 1 de Hawaii: SMS 1 (lun 12), SMS 2 (mar 13), Email 1 (mié 14).</li>
+      <li>Fase 1 de Midland: SMS 1 (lun 12), SMS 2 (mié 14), Email 1 (jue 15).</li>
+      <li>Quién hace el contacto personal con las familias de marzo en Hawaii.</li>
+      <li>Si Hawaii tendrá una fecha real de cierre de inscripción por la logística.</li>
+    </ol></div>
+    <div class="panel"><h3>Antes del primer envío</h3><ul>
+      <li>Probar que el enlace abre la página de cada sede directamente en la sección de pago (las páginas nuevas de Midland y Hawaii tienen otra estructura que las de Dallas y Chicago).</li>
+      <li>Quitar de las listas a las familias que ya pagaron 2026-27 el mismo día del envío.</li>
+      <li>Hacer un envío de prueba y revisarlo en celular.</li>
+    </ul><p class="mini">Las fases 2 a 4 se presentan con sus textos completos antes de cada envío.</p></div>
+  </div>
+  <p class="oro" style="margin-top:16px">Los enlaces cortos de los SMS (jtcamps.us/…) son ilustrativos: Vozzi genera su propio enlace corto al programar el mensaje.</p>
+</section>
+
+</main>
+<footer><div class="wrap">Juventus ID Camps 2026-27 · Plan de email y SMS de Hawaii y Midland · Propuesta del 11-10-2026 · Página interna, no indexada. Cifras de familias y pagos: plataforma de inscripción y clínicas de 2026; solo totales, sin datos personales.</div></footer>
+</body>
+</html>
